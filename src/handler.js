@@ -1,7 +1,7 @@
-const kintone = require('./kintoneHandler');
-const garoon = require('./GaroonHandler');
-const slack = require('./SlackHandler');
-const line = require('./lineHandler');
+const kintone = require('./service/kintoneHandler');
+const garoon = require('./service/GaroonHandler');
+const slack = require('./service/SlackHandler');
+const line = require('./service/lineHandler');
 
 module.exports.main = async (event) => {
 
