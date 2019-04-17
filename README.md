@@ -36,7 +36,7 @@ sls deploy -v
 sls deploy -f {func name}
 ```
 
-## logs
+### logs
 
 ログの確認は以下のコマンドで行います
 
