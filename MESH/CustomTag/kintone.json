@@ -1,0 +1,58 @@
+{
+	"formatVersion": "1.0",
+	"tagData": {
+		"name": "kintone (Tips)",
+		"icon": "data:image/png;base64,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",
+		"description": "MESHからkintoneにデータを送信するサンプルカスタムタグです。",
+		"functions": [
+			{
+				"id": "function_0",
+				"name": "振ったらレコード登録",
+				"connector": {
+					"inputs": [
+						{
+							"label": ""
+						}
+					],
+					"outputs": [
+						{
+							"label": ""
+						}
+					]
+				},
+				"properties": [
+					{
+						"name": "ドメイン名",
+						"referenceName": "domain",
+						"type": "string",
+						"defaultValue": "{YOUR_CYBOZU_DOMAIN}.cybozu.com"
+					},
+					{
+						"name": "アプリケーションID",
+						"referenceName": "appId",
+						"type": "string",
+						"defaultValue": "{YOUR_APP_ID}"
+					},
+					{
+						"name": "APIトークン",
+						"referenceName": "apiToken",
+						"type": "string",
+						"defaultValue": "{YOUR_API_TOKEN}"
+					},
+					{
+						"name": "kintoneログインID",
+						"referenceName": "userName",
+						"type": "string",
+						"defaultValue": "{YOUR_CYBOZU_LOGIN_ID}"
+					}
+				],
+				"extension": {
+					"initialize": "",
+					"receive": "",
+					"execute": "const common = {\n  url: 'https://' + properties.domain + '/k/v1/record.json',\n  appId: properties.appId,\n  apiToken: properties.apiToken,\n  userName: properties.userName\n};\n\n// レコードに設定する値\nconst params = {\n\tapp: common.appId,\n\trecord: {\n\t\tUser: {\n\t\t\tvalue: [{\n\t\t\t\tcode: common.userName\n\t\t\t}]\n\t\t}\n\t}\n};\n\najax({\n  url : common.url,\n  data : JSON.stringify(params),\n  type : 'POST',\n  contentType : 'application/json',\n  dataType : 'json',\n  timeout : 5000,\n\theaders: {\n\t\t'X-Cybozu-API-Token': common.apiToken\n\t},\n\tsuccess: function() {\n    log('success');\n  },\n  error: function(request, errorMessage) {\n    log('error');\n\t\tlog(request.responseText);\n\t\tlog(errorMessage);\n  }\n});\nreturn {\n  resultType : 'continue'\n};",
+					"result": ""
+				}
+			}
+		]
+	}
+}
