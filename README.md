@@ -7,7 +7,7 @@ cybozu developer network記事のプログラムです。
 以下のコマンドを実行してモジュールをインストールしてください。 <br/>
 
 ```console
-npm install
+$ npm install
 ```
 
 ## How to use
@@ -19,7 +19,7 @@ npm install
 [Serverless Framework](https://serverless.com/) を利用します。 <br/>
 
 ```console
-sls deploy -v
+$ sls deploy -v
 ```
 
 これだけでAWS環境にデプロイできます。
@@ -33,7 +33,7 @@ sls deploy -v
 `sls deploy -v` だとAWS環境を再構築するため、関数だけ更新する場合は以下のコマンドが良いです。
 
 ```console
-sls deploy -f {func name}
+$ sls deploy -f {func name}
 ```
 
 ### logs
@@ -41,7 +41,7 @@ sls deploy -f {func name}
 ログの確認は以下のコマンドで行います
 
 ```console
-sls logs -f {func name}
+$ sls logs -f {func name}
 ```
 
 `| tail` とかすると良いかも。
