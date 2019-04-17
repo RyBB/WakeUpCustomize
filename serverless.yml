@@ -1,0 +1,43 @@
+service: bb-wakeup # your service name
+
+custom:
+  defaultStage: prod # stage
+  defaultDomain: "{YOUR_CYBOZU_DOMAIN}" # {subdomain}.cybozu.com
+  defaultAuth: "{YOUR_CYBOZU_AUTH}" # base64
+  defaultToDoAppId: "{YOUR_KINTONE_TODO_APP_ID}" # 1
+  defaultLINEUserId: "{YOUR_LINE_USER_ID}"
+  defaultLINEToken: "{YOUR_LINE_CHANNEL_ACCESS_TOKEN}"
+  defaultSlackUrl: "{YOUR_SLACK_BOT_URL}"
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  stage: dev
+  region: ap-northeast-1
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - logs:CreateLogGroup
+        - logs:CreateLogStream
+        - logs:PutLogEvents
+      Resource:
+        - "*"
+  environment:
+    CYBOZU_DOMAIN: ${self:custom.defaultDomain}
+    CYBOZU_AUTH: ${self:custom.defaultAuth}
+    KINTONE_TODO_APPID: ${self:custom.defaultToDoAppId}
+    LINE_USER_ID: ${self:custom.defaultLINEUserId}
+    LINE_CHANNEL_ACCESS_TOKEN: ${self:custom.defaultLINEToken}
+    SLACK_URL: ${self:custom.defaultSlackUrl}
+
+functions:
+  func:
+    handler: src/handler.main
+    description: めざましカスタマイズ
+    events:
+      - http:
+          path: wakeup
+          method: post
+          cors: true
+    environment:
+      FUNCTION_NAME: ${self:service}-${self:provider.stage}
